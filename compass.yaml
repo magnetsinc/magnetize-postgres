@@ -19,9 +19,6 @@ links:
   - name: Observability Dashboard
     type: DASHBOARD
     url: 'https://app.datadoghq.com/dashboard/v43-thf-yrv/dashboard'
-  - name: Who is on-call for Magnetizers
-    type: ON_CALL
-    url: 'https://compass-magnets.app.opsgenie.com/settings/schedule/detail/0b2007f0-8133-4ef8-b4e5-541c7e80840f'
   - name: Opsgenie service
     type: OTHER_LINK
     url: 'https://compass-magnets.app.opsgenie.com/service/aeffe45e-3eb0-45f8-9219-1e310f7fd85c'
