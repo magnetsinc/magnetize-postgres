@@ -20,6 +20,9 @@ links:
   - name: Observability Dashboard
     type: DASHBOARD
     url: 'https://app.datadoghq.com/dashboard/v43-thf-yrv/dashboard'
+  - name: blah
+    type: ON_CALL
+    url: "https://blah.com"
 relationships: {}
 
 # Learn more about formatting compass.yml:
