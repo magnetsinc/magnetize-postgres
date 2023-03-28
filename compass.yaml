@@ -2,8 +2,10 @@ name: magnetize-postgres
 id: 'ari:cloud:compass:7d7a1354-b50b-4f1e-b409-1f3c509aea99:component/910c34fb-0e18-40c8-8568-c31a5cefb046/c1f43e9e-9b98-4cb3-8005-f062d9863284'
 description: Relational datastore for all magnetize components
 ownerId: 'ari:cloud:teams::team/df9335ac-cccf-4f3e-9218-eb7c8fea2115'
+type: CLOUD_RESOURCE
 fields:
   tier: 1
+  lifecycle: Active
 links:
   - name: 'Contact us here'
     type: CHAT_CHANNEL
@@ -20,7 +22,20 @@ links:
   - name: Observability Dashboard
     type: DASHBOARD
     url: 'https://app.datadoghq.com/dashboard/v43-thf-yrv/dashboard'
-relationships: {}
+  #- name: Magnetizers On-call
+  #  type: ON_CALL
+  #  url: 'https://compass-magnets.app.opsgenie.com/settings/schedule/detail/0b2007f0-8133-4ef8-b4e5-541c7e80840f'
+  #- name: Opsgenie service
+  #  type: OTHER_LINK
+  #  url: 'https://compass-magnets.app.opsgenie.com/service/aeffe45e-3eb0-45f8-9219-1e310f7fd85c'
+labels:
+  - aws
+  - datastore
+  - postgres
+  - terraform
+relationships:
+  DEPENDS_ON:
+    - ari:cloud:compass:7d7a1354-b50b-4f1e-b409-1f3c509aea99:component/910c34fb-0e18-40c8-8568-c31a5cefb046/1d243600-59a0-4643-8e83-454c33ced54c
 
 # Learn more about formatting compass.yml:
 # https://go.atlassian.com/compass-yml-format
